@@ -1,0 +1,39 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 221,
+    "height": 103,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "capture_decran_2020-10-28_234636.png",
+          "use1Xscale": false,
+          "name": "capture_decran_2020-10-28_234636.png",
+          "x": 143,
+          "y": 85
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Abonne toi ou j'te fume (nn c pas vrai)",
+          "onClick": {
+            "name": "Abonnezvous"
+          },
+          "width": 220,
+          "height": 20,
+          "name": "Abonne toi ou j'te fume (nn c pas vrai)",
+          "x": 103,
+          "y": 131
+        }
+      }
+    ]
+  }
+}

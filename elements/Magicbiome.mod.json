@@ -1,14 +1,14 @@
 {
-  "_fv": 11,
+  "_fv": 13,
   "_type": "biome",
   "definition": {
+    "name": "Magicbiome",
     "groundBlock": {
       "value": "CUSTOM:Dirtmagic"
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
     },
-    "generateLakes": false,
     "treeType": 1,
     "vanillaTreeType": "Default",
     "minHeight": 7,
@@ -33,12 +33,21 @@
       "value": -3407668,
       "falpha": 0.0
     },
+    "foliageColor": {
+      "value": -3407668,
+      "falpha": 0.0
+    },
     "waterColor": {
+      "value": -3407668,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
       "value": -3407668,
       "falpha": 0.0
     },
     "treesPerChunk": 3,
     "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -57,9 +66,27 @@
     "parent": {
       "value": "No parent"
     },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
     "biomeDictionaryTypes": [
       "PLAINS",
       "FOREST"
+    ],
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Structures",
+      "Ores",
+      "Lakes"
     ],
     "spawnEntries": []
   }

@@ -2,8 +2,8 @@
   "parent": "mmorpg:custom/epeelegendaire",
   "textures": {
     "0": "mmorpg:blocks/bee_nest_side",
-    "1": "mmorpg:blocks/debug",
-    "2": "mmorpg:blocks/anvil",
+    "1": "mmorpg:blocks/anvil",
+    "2": "mmorpg:blocks/debug",
     "particle": "mmorpg:items/test"
   }
 }

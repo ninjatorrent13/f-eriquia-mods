@@ -17,6 +17,9 @@
  */
 package net.mcreator.mmorpg;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -40,6 +43,7 @@ import java.util.function.Supplier;
 
 @Mod("mmorpg")
 public class MmorpgMod {
+	public static final Logger LOGGER = LogManager.getLogger(MmorpgMod.class);
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("mmorpg", "mmorpg"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
@@ -58,6 +62,7 @@ public class MmorpgMod {
 
 	private void clientSetup(FMLClientSetupEvent event) {
 		OBJLoader.INSTANCE.addDomain("mmorpg");
+		elements.getElements().forEach(element -> element.clientLoad(event));
 	}
 
 	@SubscribeEvent

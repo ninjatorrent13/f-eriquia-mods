@@ -179,6 +179,74 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "leaves_magic"
+    },
+    {
+      "name": "Abonnezvous",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abonnezvous",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Abonnetoi",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abonnetoi"
+    },
+    {
+      "name": "AbonnezvousacornyItemInHandTick",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abonnezvousacorny_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Abonnezvousacorny",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abonnezvousacorny"
     }
   ],
   "variable_elements": [],
@@ -187,16 +255,18 @@
     "en_us": {
       "item.mmorpg.liquiderose_bucket": "Liquiderose Bucket",
       "item.mmorpg.magic": "Magic Portal Igniter",
+      "biome.mmorpg.magicbiome": "Magicbiome",
       "item.mmorpg.ailedefee_leggings": "Ailedefee Leggings",
       "item.mmorpg.ailedefee_boots": "Ailedefee Boots",
-      "block.mmorpg.dirtmagic": "Dirt Magic",
       "item.mmorpg.ailedefee_helmet": "Ailedefee Helmet",
+      "block.mmorpg.dirtmagic": "Dirt Magic",
       "item.mmorpg.bucket_pinky": "Bucket Pinky",
       "item.mmorpg.ailedefee_chestplate": "Aile de fée",
       "fluid.liquiderose": "Liquiderose",
       "block.mmorpg.logmagic": "Log Magic",
       "block.mmorpg.leaves_magic": "Leaves Magic",
-      "item.mmorpg.epeecommun": "Epée commun"
+      "item.mmorpg.epeecommun": "Epée commun",
+      "item.mmorpg.abonnezvousacorny": "Abonnez vous a cornysneeze"
     }
   },
   "workspaceSettings": {
@@ -215,5 +285,5 @@
     "modElementsPackage": "net.mcreator.mmorpg",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000535716
+  "mcreatorVersion": 202000543719
 }

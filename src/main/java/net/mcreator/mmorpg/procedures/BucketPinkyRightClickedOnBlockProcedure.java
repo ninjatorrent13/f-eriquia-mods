@@ -52,9 +52,10 @@ public class BucketPinkyRightClickedOnBlockProcedure extends MmorpgModElements.M
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(BucketPinkyItem.block, (int) (1)).getItem() == p.getItem(),
-					(int) 1);
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BucketPinkyItem.block, (int) (1));
+			((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+		}
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), LiquideroseBlock.block.getDefaultState(), 3);
 		if (entity instanceof PlayerEntity) {
 			ItemStack _setstack = new ItemStack(Items.BUCKET, (int) (1));

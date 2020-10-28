@@ -1,14 +1,16 @@
 {
   "item.mmorpg.liquiderose_bucket": "Liquiderose Bucket",
   "item.mmorpg.magic": "Magic Portal Igniter",
+  "biome.mmorpg.magicbiome": "Magicbiome",
   "item.mmorpg.ailedefee_leggings": "Ailedefee Leggings",
   "item.mmorpg.ailedefee_boots": "Ailedefee Boots",
-  "block.mmorpg.dirtmagic": "Dirt Magic",
   "item.mmorpg.ailedefee_helmet": "Ailedefee Helmet",
+  "block.mmorpg.dirtmagic": "Dirt Magic",
   "item.mmorpg.bucket_pinky": "Bucket Pinky",
   "item.mmorpg.ailedefee_chestplate": "Aile de fée",
   "fluid.liquiderose": "Liquiderose",
   "block.mmorpg.logmagic": "Log Magic",
   "block.mmorpg.leaves_magic": "Leaves Magic",
-  "item.mmorpg.epeecommun": "Epée commun"
+  "item.mmorpg.epeecommun": "Epée commun",
+  "item.mmorpg.abonnezvousacorny": "Abonnez vous a cornysneeze"
 }
