@@ -1,0 +1,219 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Classe",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "classe"
+    },
+    {
+      "name": "Arriverdanslemonde",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arriverdanslemonde",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ailedefee",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ailedefee",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "Ailefee",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ailefee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Epeecommun",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epeecommun"
+    },
+    {
+      "name": "Dirtmagic",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirtmagic"
+    },
+    {
+      "name": "Liquiderose",
+      "type": "fluid",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "liquiderose"
+    },
+    {
+      "name": "BucketPinky",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bucket_pinky"
+    },
+    {
+      "name": "BucketPinkyRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bucket_pinky_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magicbiome",
+      "type": "biome",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magicbiome"
+    },
+    {
+      "name": "Magic",
+      "type": "dimension",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic"
+    },
+    {
+      "name": "Logmagic",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "logmagic"
+    },
+    {
+      "name": "LeavesMagic",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaves_magic"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.mmorpg.liquiderose_bucket": "Liquiderose Bucket",
+      "item.mmorpg.magic": "Magic Portal Igniter",
+      "item.mmorpg.ailedefee_leggings": "Ailedefee Leggings",
+      "item.mmorpg.ailedefee_boots": "Ailedefee Boots",
+      "block.mmorpg.dirtmagic": "Dirt Magic",
+      "item.mmorpg.ailedefee_helmet": "Ailedefee Helmet",
+      "item.mmorpg.bucket_pinky": "Bucket Pinky",
+      "item.mmorpg.ailedefee_chestplate": "Aile de fée",
+      "fluid.liquiderose": "Liquiderose",
+      "block.mmorpg.logmagic": "Log Magic",
+      "block.mmorpg.leaves_magic": "Leaves Magic",
+      "item.mmorpg.epeecommun": "Epée commun"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "mmorpg",
+    "modName": "mmorpg",
+    "version": "1.0.0",
+    "author": "ezeki, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.14.4",
+    "modElementsPackage": "net.mcreator.mmorpg",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000535716
+}

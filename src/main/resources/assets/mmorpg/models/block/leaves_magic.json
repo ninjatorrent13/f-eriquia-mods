@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mmorpg:blocks/leavesmagic",
+    "up": "mmorpg:blocks/leavesmagic",
+    "north": "mmorpg:blocks/leavesmagic",
+    "east": "mmorpg:blocks/leavesmagic",
+    "south": "mmorpg:blocks/leavesmagic",
+    "west": "mmorpg:blocks/leavesmagic",
+    "particle": "mmorpg:blocks/leavesmagic"
+  }
+}

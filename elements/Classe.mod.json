@@ -1,0 +1,74 @@
+{
+  "_fv": 11,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 242,
+    "height": 188,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "classe",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "classe",
+          "x": 193,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "lutin",
+          "width": 50,
+          "height": 20,
+          "name": "lutin",
+          "x": 116,
+          "y": 63
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "fée",
+          "width": 40,
+          "height": 20,
+          "name": "fée",
+          "x": 188,
+          "y": 63
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "ogre",
+          "width": 45,
+          "height": 20,
+          "name": "ogre",
+          "x": 254,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ces tout pour linstant",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "ces tout pour linstant",
+          "x": 158,
+          "y": 119
+        }
+      }
+    ]
+  }
+}

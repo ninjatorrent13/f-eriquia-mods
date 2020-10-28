@@ -1,0 +1,47 @@
+{
+  "_fv": 11,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Dirtmagic"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Magic Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "test",
+    "portalTexture": "test",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Magicbiome"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Dirtmagic"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Liquiderose"
+    },
+    "airColor": {
+      "value": -26113,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

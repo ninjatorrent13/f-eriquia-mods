@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mmorpg:blocks/gtbtbtth",
+    "up": "mmorpg:blocks/grass_block_top",
+    "north": "mmorpg:blocks/grass_block_side",
+    "east": "mmorpg:blocks/grass_block_side",
+    "south": "mmorpg:blocks/grass_block_side",
+    "west": "mmorpg:blocks/grass_block_side",
+    "particle": "mmorpg:blocks/gtbtbtth"
+  }
+}

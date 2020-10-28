@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mmorpg:blocks/topboismagic",
+    "up": "mmorpg:blocks/topboismagic",
+    "north": "mmorpg:blocks/logmagiccoter",
+    "east": "mmorpg:blocks/logmagiccoter",
+    "south": "mmorpg:blocks/logmagiccoter",
+    "west": "mmorpg:blocks/logmagiccoter",
+    "particle": "mmorpg:blocks/topboismagic"
+  }
+}
