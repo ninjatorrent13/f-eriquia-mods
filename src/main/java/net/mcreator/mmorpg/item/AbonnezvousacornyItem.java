@@ -1,35 +1,24 @@
 
 package net.mcreator.mmorpg.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.mmorpg.procedures.AbonnezvousacornyItemInHandTickProcedure;
-import net.mcreator.mmorpg.MmorpgModElements;
-
-import java.util.Map;
-import java.util.HashMap;
-
 @MmorpgModElements.ModElement.Tag
 public class AbonnezvousacornyItem extends MmorpgModElements.ModElement {
+
 	@ObjectHolder("mmorpg:abonnezvousacorny")
 	public static final Item block = null;
+
 	public AbonnezvousacornyItem(MmorpgModElements instance) {
 		super(instance, 13);
+
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
+
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("abonnezvousacorny");
@@ -58,13 +47,17 @@ public class AbonnezvousacornyItem extends MmorpgModElements.ModElement {
 			double z = entity.posZ;
 			if (selected) {
 				Map<String, Object> $_dependencies = new HashMap<>();
+
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+
 				AbonnezvousacornyItemInHandTickProcedure.executeProcedure($_dependencies);
 			}
 		}
+
 	}
+
 }

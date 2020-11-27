@@ -1,20 +1,12 @@
 
 package net.mcreator.mmorpg.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.mmorpg.MmorpgModElements;
-
 @MmorpgModElements.ModElement.Tag
 public class EpeecommunItem extends MmorpgModElements.ModElement {
+
 	@ObjectHolder("mmorpg:epeecommun")
 	public static final Item block = null;
+
 	public EpeecommunItem(MmorpgModElements instance) {
 		super(instance, 5);
 	}
@@ -46,6 +38,8 @@ public class EpeecommunItem extends MmorpgModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.5f, new Item.Properties().group(ItemGroup.TOOLS)) {
+
 		}.setRegistryName("epeecommun"));
 	}
+
 }

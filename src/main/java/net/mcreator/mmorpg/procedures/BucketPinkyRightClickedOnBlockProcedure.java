@@ -1,24 +1,11 @@
 package net.mcreator.mmorpg.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.mmorpg.item.BucketPinkyItem;
-import net.mcreator.mmorpg.block.LiquideroseBlock;
-import net.mcreator.mmorpg.MmorpgModElements;
-
-import java.util.Map;
-
 @MmorpgModElements.ModElement.Tag
 public class BucketPinkyRightClickedOnBlockProcedure extends MmorpgModElements.ModElement {
+
 	public BucketPinkyRightClickedOnBlockProcedure(MmorpgModElements instance) {
 		super(instance, 9);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -47,11 +34,13 @@ public class BucketPinkyRightClickedOnBlockProcedure extends MmorpgModElements.M
 				System.err.println("Failed to load dependency world for procedure BucketPinkyRightClickedOnBlock!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (entity instanceof PlayerEntity) {
 			ItemStack _stktoremove = new ItemStack(BucketPinkyItem.block, (int) (1));
 			((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
@@ -62,5 +51,7 @@ public class BucketPinkyRightClickedOnBlockProcedure extends MmorpgModElements.M
 			_setstack.setCount((int) 1);
 			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
+
 	}
+
 }

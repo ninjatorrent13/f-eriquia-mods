@@ -1,30 +1,11 @@
 package net.mcreator.mmorpg.procedures;
 
-import net.minecraftforge.fml.network.NetworkHooks;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.mmorpg.gui.AbonnetoiGui;
-import net.mcreator.mmorpg.MmorpgModElements;
-
-import java.util.Map;
-
-import io.netty.buffer.Unpooled;
-
 @MmorpgModElements.ModElement.Tag
 public class AbonnezvousacornyItemInHandTickProcedure extends MmorpgModElements.ModElement {
+
 	public AbonnezvousacornyItemInHandTickProcedure(MmorpgModElements instance) {
 		super(instance, 14);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -53,11 +34,13 @@ public class AbonnezvousacornyItemInHandTickProcedure extends MmorpgModElements.
 				System.err.println("Failed to load dependency world for procedure AbonnezvousacornyItemInHandTick!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		{
 			Entity _ent = entity;
 			if (_ent instanceof ServerPlayerEntity) {
@@ -75,5 +58,7 @@ public class AbonnezvousacornyItemInHandTickProcedure extends MmorpgModElements.
 				}, _bpos);
 			}
 		}
+
 	}
+
 }

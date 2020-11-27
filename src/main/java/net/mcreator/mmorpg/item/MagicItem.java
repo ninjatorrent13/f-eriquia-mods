@@ -1,22 +1,11 @@
 
 package net.mcreator.mmorpg.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.item.ItemUseContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-
-import net.mcreator.mmorpg.world.dimension.MagicDimension;
-
 public class MagicItem extends Item {
+
 	@ObjectHolder("mmorpg:magic")
 	public static final Item block = null;
+
 	public MagicItem() {
 		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
 	}
@@ -33,8 +22,10 @@ public class MagicItem extends Item {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+
 			if (world.isAirBlock(pos) && true)
 				MagicDimension.portal.portalSpawn(world, pos);
+
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;
 		}

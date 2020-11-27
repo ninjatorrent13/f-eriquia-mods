@@ -1,27 +1,11 @@
 package net.mcreator.mmorpg.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.World;
-import net.minecraft.world.GameType;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.network.play.NetworkPlayerInfo;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.mmorpg.MmorpgModElements;
-
-import java.util.Map;
-import java.util.HashMap;
-
 @MmorpgModElements.ModElement.Tag
 public class AilefeeProcedure extends MmorpgModElements.ModElement {
+
 	public AilefeeProcedure(MmorpgModElements instance) {
 		super(instance, 4);
+
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -31,7 +15,9 @@ public class AilefeeProcedure extends MmorpgModElements.ModElement {
 				System.err.println("Failed to load dependency entity for procedure Ailefee!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if ((true)) {
 			if (entity instanceof PlayerEntity) {
 				((PlayerEntity) entity).abilities.allowFlying = (true);
@@ -59,6 +45,7 @@ public class AilefeeProcedure extends MmorpgModElements.ModElement {
 				((PlayerEntity) entity).sendPlayerAbilities();
 			}
 		}
+
 	}
 
 	@SubscribeEvent
@@ -79,4 +66,5 @@ public class AilefeeProcedure extends MmorpgModElements.ModElement {
 			this.executeProcedure(dependencies);
 		}
 	}
+
 }
